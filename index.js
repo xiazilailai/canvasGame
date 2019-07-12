@@ -78,22 +78,22 @@ let updateLiveAffectCellMap = (cellX, cellY) => {
     let key6 = [(cellX + 0), (cellY + 1)];
     let key7 = [(cellX - 1), (cellY + 1)];
     let key8 = [(cellX - 1), (cellY + 0)];
-    if(key1[0] < rowNum && key1[1] < colNum) liveAffectCellMapp[key1[0] + "-" + key1[1]] = cellMap[key1[0]][key1[1]];
-    if(key2[0] < rowNum && key2[1] < colNum) liveAffectCellMapp[key2[0] + "-" + key2[1]] = cellMap[key2[0]][key2[1]];
-    if(key3[0] < rowNum && key3[1] < colNum) liveAffectCellMapp[key3[0] + "-" + key3[1]] = cellMap[key3[0]][key3[1]];
-    if(key4[0] < rowNum && key4[1] < colNum) liveAffectCellMapp[key4[0] + "-" + key4[1]] = cellMap[key4[0]][key4[1]];
-    if(key5[0] < rowNum && key5[1] < colNum) liveAffectCellMapp[key5[0] + "-" + key5[1]] = cellMap[key5[0]][key5[1]];
-    if(key6[0] < rowNum && key6[1] < colNum) liveAffectCellMapp[key6[0] + "-" + key6[1]] = cellMap[key6[0]][key6[1]];
-    if(key7[0] < rowNum && key7[1] < colNum) liveAffectCellMapp[key7[0] + "-" + key7[1]] = cellMap[key7[0]][key7[1]];
-    if(key8[0] < rowNum && key8[1] < colNum) liveAffectCellMapp[key8[0] + "-" + key8[1]] = cellMap[key8[0]][key8[1]];
-    if(key1[0] < rowNum && key1[1] < colNum) liveAffectCellMapp[key1[0] + "-" + key1[1]].liveCellAround ++;
-    if(key2[0] < rowNum && key2[1] < colNum) liveAffectCellMapp[key2[0] + "-" + key2[1]].liveCellAround ++;
-    if(key3[0] < rowNum && key3[1] < colNum) liveAffectCellMapp[key3[0] + "-" + key3[1]].liveCellAround ++;
-    if(key4[0] < rowNum && key4[1] < colNum) liveAffectCellMapp[key4[0] + "-" + key4[1]].liveCellAround ++;
-    if(key5[0] < rowNum && key5[1] < colNum) liveAffectCellMapp[key5[0] + "-" + key5[1]].liveCellAround ++;
-    if(key6[0] < rowNum && key6[1] < colNum) liveAffectCellMapp[key6[0] + "-" + key6[1]].liveCellAround ++;
-    if(key7[0] < rowNum && key7[1] < colNum) liveAffectCellMapp[key7[0] + "-" + key7[1]].liveCellAround ++;
-    if(key8[0] < rowNum && key8[1] < colNum) liveAffectCellMapp[key8[0] + "-" + key8[1]].liveCellAround ++;
+    if(key1[0] >= 0 && key1[1] >= 0 && key1[0] < rowNum && key1[1] < colNum) liveAffectCellMapp[key1[0] + "-" + key1[1]] = cellMap[key1[0]][key1[1]];
+    if(key2[0] >= 0 && key2[1] >= 0 && key2[0] < rowNum && key2[1] < colNum) liveAffectCellMapp[key2[0] + "-" + key2[1]] = cellMap[key2[0]][key2[1]];
+    if(key3[0] >= 0 && key3[1] >= 0 && key3[0] < rowNum && key3[1] < colNum) liveAffectCellMapp[key3[0] + "-" + key3[1]] = cellMap[key3[0]][key3[1]];
+    if(key4[0] >= 0 && key4[1] >= 0 && key4[0] < rowNum && key4[1] < colNum) liveAffectCellMapp[key4[0] + "-" + key4[1]] = cellMap[key4[0]][key4[1]];
+    if(key5[0] >= 0 && key5[1] >= 0 && key5[0] < rowNum && key5[1] < colNum) liveAffectCellMapp[key5[0] + "-" + key5[1]] = cellMap[key5[0]][key5[1]];
+    if(key6[0] >= 0 && key6[1] >= 0 && key6[0] < rowNum && key6[1] < colNum) liveAffectCellMapp[key6[0] + "-" + key6[1]] = cellMap[key6[0]][key6[1]];
+    if(key7[0] >= 0 && key7[1] >= 0 && key7[0] < rowNum && key7[1] < colNum) liveAffectCellMapp[key7[0] + "-" + key7[1]] = cellMap[key7[0]][key7[1]];
+    if(key8[0] >= 0 && key8[1] >= 0 && key8[0] < rowNum && key8[1] < colNum) liveAffectCellMapp[key8[0] + "-" + key8[1]] = cellMap[key8[0]][key8[1]];
+    if(key1[0] >= 0 && key1[1] >= 0 && key1[0] < rowNum && key1[1] < colNum) liveAffectCellMapp[key1[0] + "-" + key1[1]].liveCellAround ++;
+    if(key2[0] >= 0 && key2[1] >= 0 && key2[0] < rowNum && key2[1] < colNum) liveAffectCellMapp[key2[0] + "-" + key2[1]].liveCellAround ++;
+    if(key3[0] >= 0 && key3[1] >= 0 && key3[0] < rowNum && key3[1] < colNum) liveAffectCellMapp[key3[0] + "-" + key3[1]].liveCellAround ++;
+    if(key4[0] >= 0 && key4[1] >= 0 && key4[0] < rowNum && key4[1] < colNum) liveAffectCellMapp[key4[0] + "-" + key4[1]].liveCellAround ++;
+    if(key5[0] >= 0 && key5[1] >= 0 && key5[0] < rowNum && key5[1] < colNum) liveAffectCellMapp[key5[0] + "-" + key5[1]].liveCellAround ++;
+    if(key6[0] >= 0 && key6[1] >= 0 && key6[0] < rowNum && key6[1] < colNum) liveAffectCellMapp[key6[0] + "-" + key6[1]].liveCellAround ++;
+    if(key7[0] >= 0 && key7[1] >= 0 && key7[0] < rowNum && key7[1] < colNum) liveAffectCellMapp[key7[0] + "-" + key7[1]].liveCellAround ++;
+    if(key8[0] >= 0 && key8[1] >= 0 && key8[0] < rowNum && key8[1] < colNum) liveAffectCellMapp[key8[0] + "-" + key8[1]].liveCellAround ++;
 }
 
 // 绘制网格
@@ -145,7 +145,7 @@ function main(){
     // window.requestAnimationFrame(main);
     loopTicket = setTimeout(()=>{
         main();
-    }, 1000);
+    }, 100);
 }
 
 // window.requestAnimationFrame(main);
