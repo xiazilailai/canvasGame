@@ -113,11 +113,12 @@ function main(){
         let cell = liveAffectCellMapp[key];
         let [cellX, cellY] = key.split("-");        
         let sta;
-        if(cell.liveCellAround == 2 || cell.liveCellAround == 3){
-            // 活
-            // sta = state.live;
-            // 加上一定的概率
-            sta =  Math.random()*cell.liveCellAround*4 >= 1 ? state.live : state.death
+        if(cell.liveCellAround == 2){
+            // 不变
+            sta = cell.state;
+        }else if(cell.liveCellAround == 3){
+            // 生
+            sta = state.live;
         }else{
             // 死
             sta = state.death;
