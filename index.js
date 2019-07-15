@@ -115,7 +115,9 @@ function main(){
         let sta;
         if(cell.liveCellAround == 2){
             // 不变
-            sta = cell.state;
+            // sta = cell.state;
+            // 加上一定的概率
+            sta =  Math.random()*cell.liveCellAround*4 >= 1 ? state.live : state.death
         }else if(cell.liveCellAround == 3){
             // 生
             sta = state.live;
